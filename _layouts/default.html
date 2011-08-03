@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  {% if page.title %}
+    <title>{{ page.title }} &mdash; {{ site.title }}</title>
+  {% else %}
+    <title>{{ site.title }}</title>
+  {% endif %}
+  {% assign description = site.description %}
+  {% if page.description %}
+    {% assign description = page.description %}
+  {% endif %}
+  <meta name="description" content="{{ description }}">
+  <meta name="author" content="{{ site.author.name }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.author.name }}" href="/feed.xml">
+  <link href="/assets/stylesheets/screen.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<header>
+  <h1>{{ site.title }}</h1>
+</header>
+
+{{ content }} 
+
+</body>
+</html>
