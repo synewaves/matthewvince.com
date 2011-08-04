@@ -4,7 +4,10 @@ description: ''
 author:
     name: Matthew Vince
     email: matthew@matthewvince.com
+    
+pygments: true
 permalink: pretty
+lsi: true
 exclude:
  - Rakefile
  - README.markdown
