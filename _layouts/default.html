@@ -18,6 +18,7 @@
   <meta name="description" content="{{ description }}">
   <meta name="author" content="{{ site.author.name }}">
   <link rel="alternate" type="application/atom+xml" title="{{ site.author.name }}" href="/feed.xml">
+  <link href='//fonts.googleapis.com/css?family=Varela+Round|Merriweather:900' rel='stylesheet' type='text/css'>
   <link href="/assets/stylesheets/base.css" rel="stylesheet" type="text/css">
   <link href="/assets/stylesheets/syntax.css" rel="stylesheet" type="text/css">
   <link href="/assets/stylesheets/screen.css" rel="stylesheet" type="text/css">
@@ -26,18 +27,28 @@
 <body>
 
 <div class="container_24 clearfix">
-  <header>
-    <h1>{{ site.title }}</h1>
+  <header id="header">
+    <h1><a href="/">{{ site.title }}</a></h1>
+    <p>Software &amp; web developer living in <a href="http://www.google.com/search?q=things+to+do+in+Baton+Rouge,+LA" rel="nofollow">Baton Rouge, LA</a>.</p>
+    <p id="as_seen_on">As seen on <a href="http://github.com/synewaves/">Github</a>, <a href="http://twitter.com/synewaves/">Twitter</a>, <a href="http://www.linkedin.com/in/matthewvince/">LinkedIn</a>, &amp; <a href="https://plus.google.com/102448384834437026011/">Google+</a>
   </header>
 
   {{ content }}
   
-  <footer>
+  <footer id="footer" class="clearfix">
+    <div class="grid_9 suffix_1 alpha">
+      {% include twitter.html %}
+    </div>
+    <div class="grid_10 omega">
+      {% include links.html %}
+    </div>
   </footer>
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script> 
 <script>window.jQuery || document.write('<script src="/assets/javascripts/jquery.min.js">\x3C/script>')</script>
+<script src="/assets/javascripts/tweet.js"></script> 
+<script src="/assets/javascripts/app.js"></script> 
 
 <script>
   var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];

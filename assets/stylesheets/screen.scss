@@ -1,3 +1,151 @@
 ---
 ---
 
+
+
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  background: #fff url(../images/100-90-5.png) 0 0 repeat;
+  color: #36393B;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+}
+
+a, a:visited {
+  color: #77A636;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+
+#header {
+  text-align: right;
+  padding: 20px 0;
+  border-bottom: 3px dotted #eee;
+  margin-bottom: 30px;
+  a, a:visited {
+    color: #000;
+    border-color: #ccc;
+  }
+  a:hover {
+    color: #26ADE4;
+    border-color: #4DBCE9;
+  }
+  
+  h1 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 200%;
+    margin-bottom: 0;
+    a, a:visited {
+      border: none;
+    }
+  }
+  p {
+    font-size: 120%;
+    font-style: italic;
+  }
+  #as_seen_on {
+    margin: -15px 0 0;
+    font-size: 100%;
+    font-style: normal;
+  }
+}
+
+#footer {
+  margin-top: 30px;
+  border-top: 3px dotted #eee;
+  padding-top: 30px;
+  font-size: 11px;
+  
+  h6 {
+    font-size: 120%;
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    margin-left: 0px;
+    li {
+      list-style: none;
+      margin: 0 0 7px 0;
+    }
+  }
+  a {
+    border-bottom-width: 0;
+  }
+  a:hover {
+    border-bottom-width: 1px;
+  }
+}
+
+.tweet_time {
+  font-size: 90%;
+  a {
+    color: #999;
+    text-decoration: none;
+  }
+}
+
+#posts {
+  margin-left: 0;
+  list-style: none;
+  li {
+    margin: 0 0 10px 0;
+    span {
+      color: #999;
+      font-size: 90%;
+      padding-right: 10px;
+    }
+    a {
+      font-size: 120%;
+    }
+  }
+}
+
+article {
+  header {
+    margin-bottom: 50px;
+    h1 {
+      font-size: 300%;
+      margin-bottom: 0;
+      a, a:visited {
+        color: #000;
+        border: none;
+      }
+      a:hover {
+        color: #FA6900;
+      }
+    }
+  }
+  
+  a, a:visited {
+    color: #26ADE4;
+    border-bottom-width: 0;
+  }
+  a:hover {
+    border-bottom-width: 1px;
+    border-bottom-color: #000;
+  }
+  blockquote {
+    display: block;
+    margin-bottom: 20px;
+    background: #eee;
+    padding: 10px 10px 1px;
+    p {
+      margin-bottom: 10px;
+    }
+  }
+  
+  #meta_navigation {
+    margin-top: 30px;
+    background: #eee;
+    p {
+      padding: 10px;
+      margin-bottom: 0;
+      font-size: 11px;
+    }
+  }
+}
