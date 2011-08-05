@@ -16,7 +16,7 @@ end
 
 desc 'Build and deploy'
 task :deploy => :build do
-  sh 'rsync -rtzhavz --delete _site/ root@matthewvince.com:/srv/www/matthewvince.com/public/'
+  sh 'rsync -rtzhavz --delete _site/ root@tryingtothink.com:/var/www/matthewvince.com/public/'
 end
 
 desc 'Begin a new post'

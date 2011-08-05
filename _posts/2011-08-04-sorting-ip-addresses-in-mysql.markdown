@@ -34,7 +34,7 @@ SELECT * FROM ip_addresses ORDER BY ip_address;
 | 192.168.1.3  |
 {% endhighlight %}
 
-That's not really what we wanted, but why?  MySQL is doing a standard string compare to order the results.  But there's some help to be found in the [MySQL manual - INET_ATON](http://dev.mysql.com/doc/refman/5.0/en/miscellaneous-functions.html#function_inet-aton).
+That's not really what we wanted, but why?  MySQL is doing a standard string compare to order the results. We need to sort on the numeric representation, but how? We could write some complicated conversion function, but there's something much more helpful found in the [MySQL manual - INET_ATON](http://dev.mysql.com/doc/refman/5.0/en/miscellaneous-functions.html#function_inet-aton).
 
 > Given the dotted-quad representation of an IPv4 network address as a string, returns an integer that represents the numeric value of the address in network byte order (big endian).
 	
