@@ -1,13 +1,14 @@
 ---
 layout: default
+title: Full Archive
 ---
 
 <div class="grid_18 prefix_6">
-  <h1>Recent Articles</h1>
+  <h1>Articles Archive</h1>
 </div>
 
-<div class="list main">
-  {% for post in site.posts limit: 5 %}
+<div class="list archive">
+  {% for post in site.posts %}
     <article class="post clearfix">
       <div class="grid_5 suffix_1 alpha">
         <time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate>{{ post.date | date: "%A, %B %d, %Y" }}</time>
@@ -19,9 +20,4 @@ layout: default
       </div>
     </article>
   {% endfor %}
-  
-  <p class="grid_18 prefix_6 meta">
-    <a href="/articles/">Full Archive &rarr;</a>
-  </p>
-
 </div>

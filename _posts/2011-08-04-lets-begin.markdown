@@ -1,8 +1,7 @@
 ---
 title: Let's Begin
-tags:  []
+tags:  [site]
 layout: post
-description: Description Content
 ---
 
 Another day, another blog.

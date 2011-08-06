@@ -18,37 +18,63 @@
   <meta name="description" content="{{ description }}">
   <meta name="author" content="{{ site.author.name }}">
   <link rel="alternate" type="application/atom+xml" title="{{ site.author.name }}" href="/feed.xml">
-  <link href='//fonts.googleapis.com/css?family=Varela+Round|Merriweather:900' rel='stylesheet' type='text/css'>
-  <link href="/assets/stylesheets/base.css" rel="stylesheet" type="text/css">
-  <link href="/assets/stylesheets/syntax.css" rel="stylesheet" type="text/css">
+  <link href='//fonts.googleapis.com/css?family=Varela+Round|Kreon:400,700' rel='stylesheet' type='text/css'>
   <link href="/assets/stylesheets/screen.css" rel="stylesheet" type="text/css">
-  <script src="/assets/javascripts/modernizr.min.js"></script> 
+  <script src="/assets/javascripts/modernizr.min.js"></script>
 </head>
 <body>
 
 <div class="container_24 clearfix">
-  <header id="header">
-    <h1><a href="/">{{ site.title }}</a></h1>
-    <p>Software &amp; web developer living in <a href="http://www.google.com/search?q=things+to+do+in+Baton+Rouge,+LA" rel="nofollow">Baton Rouge, LA</a>.</p>
-    <p id="as_seen_on">As seen on <a href="http://github.com/synewaves/">Github</a>, <a href="http://twitter.com/synewaves/">Twitter</a>, <a href="http://www.linkedin.com/in/matthewvince/">LinkedIn</a>, &amp; <a href="https://plus.google.com/102448384834437026011/">Google+</a>
+  <header id="header" class="clearfix">
+    <div class="grid_3 alpha">
+      <!-- <img src="http://www.gravatar.com/avatar/b0d5cb33065bedf14a66e131f780d346&amp;s=80" id="portrait" height="80" width="80" alt="Matthew Vince"> -->
+    </div>
+    <div class="grid_6 suffix_4">
+      <h1><a href="/">{{ site.title }}</a></h1>
+      <p>Software &amp; web developer living in <a href="http://www.google.com/search?q=things+to+do+in+Baton+Rouge,+LA" rel="nofollow">Baton Rouge, LA</a>.</p>
+    </div>
+    <nav class="grid_4">
+      <h5>Site</h5>
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/archive">Archive</a></li>
+        <li><a href="/feed.xml">RSS</a></li>
+      </ul>
+    </nav>
+    <nav class="grid_7 omega" id="also_nav">
+      <h5>Also seen on</h5>
+      <ul>
+        <li><a href="http://github.com/synewaves/">Github</a></li>
+        <li><a href="http://twitter.com/synewaves/">Twitter</a></li>
+        <li><a href="http://www.linkedin.com/in/matthewvince/">LinkedIn</a></li>
+        <li><a href="https://plus.google.com/102448384834437026011/">Google+</a></li>
+        <li><a href="http://www.facebook.com/matthewmvince">Facebook</a></li>
+        <li><a href="mailto:matt@matthewvince.com">Email</a></li>
+      </ul>
+    </nav>
   </header>
 
-  {{ content }}
-  
+  <div class="clearfix">
+    {{ content }}
+  </div>
+
   <footer id="footer" class="clearfix">
-    <div class="grid_9 suffix_1 alpha">
+    <div class="grid_11 suffix_1 alpha">
       {% include twitter.html %}
     </div>
-    <div class="grid_10 omega">
+    <div class="grid_9 omega">
       {% include links.html %}
     </div>
+    <div class="grid_18 copyright">
+      <p>Copyright © 2011 Matthew Vince. <a href="http://creativecommons.org/licenses/by-sa/3.0/">Some rights reserved</a>.</p>
+    </div>
   </footer>
+  
 </div>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script> 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
 <script>window.jQuery || document.write('<script src="/assets/javascripts/jquery.min.js">\x3C/script>')</script>
-<script src="/assets/javascripts/tweet.js"></script> 
-<script src="/assets/javascripts/app.js"></script> 
+<script src="/assets/javascripts/app.js"></script>
 
 <script>
   var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];

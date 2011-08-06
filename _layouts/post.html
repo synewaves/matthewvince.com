@@ -2,24 +2,27 @@
 layout: default
 ---
 
-<article>
-  <header>
-    <h1><a href="{{ page.url }}" rel="bookmark" title="link to this post">{{ page.title }}</a></h1>
-    <time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate>Published {{ page.date | date: "%A, %B %d, %Y" }}</time>
-  </header>
-  
-  {{ content }}        
-
-  <div class="clearfix" id="meta_navigation">
+<article class="post clearfix">
+  <div class="grid_5 suffix_1 alpha">
+    <time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate>{{ page.date | date: "%A, %B %d, %Y" }}</time>
     {% if page.previous.url %} 
-    <div class="previous grid_12 alpha">
-      <p><a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&larr; {{page.previous.title}}</a></p>
-    </div>
+    <p class="previous">
+      <strong>Previous:</strong>
+      <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&larr; {{page.previous.title}}</a>
+    </p>
     {% endif %}
     {% if page.next.url %} 
-    <div class="next grid_12 omega">
-      <p><a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">{{page.next.title}} &rarr;</a></p>
-    </div>
+    <p class="next">
+      <strong>Next:</strong>
+      <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">{{page.next.title}} &rarr;</a>
+    </p>
     {% endif %}
+  </div>
+  <div class="grid_18 omega">
+    <header>
+      <h1><a href="{{ page.url }}" rel="bookmark" title="link to this post">{{ page.title }}</a></h1>
+    </header>
+  
+    {{ content }}
   </div>
 </article>
